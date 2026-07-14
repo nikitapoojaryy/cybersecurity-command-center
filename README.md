@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cybersecurity Portfolio
+
+A premium, production-ready portfolio website for ethical hackers, penetration testers, and red team engineers.
+
+## Features
+
+- **Professional Design**: Luxury red and black theme inspired by enterprise SOC dashboards
+- **Modern Tech Stack**: Next.js 15, TypeScript, Tailwind CSS v4, Framer Motion
+- **Fully Responsive**: Perfect on desktop, tablet, and mobile devices
+- **Accessibility**: Semantic HTML, ARIA labels, keyboard navigation
+- **Performance Optimized**: Fast builds, optimized images, lazy loading
+- **SEO Ready**: Robots.txt, sitemap.xml, OpenGraph, structured metadata
+
+## Sections
+
+- **Hero**: Eye-catching entry with animated terminal and CTA buttons
+- **About**: Professional introduction and key expertise highlights
+- **Skills**: Categorized technical skills with visual cards
+- **Projects**: Security assessment case studies with technologies and results
+- **Experience**: Professional timeline with key achievements
+- **Certifications**: Certification roadmap with status tracking
+- **Research**: Security research articles and blog posts
+- **Contact**: Professional contact form and social links
+
+## Component Architecture
+
+```
+src/app/
+├── components/
+│   ├── layout/        # Navbar, Footer
+│   ├── sections/      # Page sections (Hero, About, Skills, etc)
+│   ├── ui/           # Reusable components (Button, Card, Badge)
+│   └── effects/      # Visual effects (GridBackground, etc)
+├── config/           # Theme, colors, animations
+├── types/            # TypeScript type definitions
+```
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technologies
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Next.js 15 (App Router)
+- TypeScript
+- Tailwind CSS v4
+- Framer Motion
+- Lucide React Icons
