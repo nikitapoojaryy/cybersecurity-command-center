@@ -68,10 +68,10 @@ export function Contact() {
                 <div>
                   <h4 className="text-white font-semibold mb-1">Email</h4>
                   <a
-                    href="mailto:hello@nikitapoojary.com"
+                    href="mailto:nikitapoojary@gmail.com"
                     className="text-[var(--muted)] hover:text-[var(--primary)] transition-colors"
                   >
-                    hello@nikitapoojary.com
+                    nikitapoojary@gmail.com
                   </a>
                 </div>
               </div>
@@ -85,10 +85,10 @@ export function Contact() {
                 <div>
                   <h4 className="text-white font-semibold mb-1">Phone</h4>
                   <a
-                    href="tel:+1234567890"
+                    href="tel:+918591065572"
                     className="text-[var(--muted)] hover:text-[var(--primary)] transition-colors"
                   >
-                    +1 (234) 567-890
+                    +91 8591065572
                   </a>
                 </div>
               </div>
@@ -101,21 +101,30 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="text-white font-semibold mb-1">Location</h4>
-                  <p className="text-[var(--muted)]">San Francisco, CA</p>
+                  <p className="text-[var(--muted)]">India</p>
                 </div>
               </div>
 
               <div>
                 <h4 className="text-white font-semibold mb-4">Follow me</h4>
-                <div className="flex gap-4">
+                <div className="flex flex-wrap gap-4">
                   <a
-                    href="https://github.com"
+                    href="https://github.com/nikitapoojaryy"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-[var(--muted)] hover:text-[var(--primary)] transition-colors"
                   >
                     <Code size={20} />
-                    Source Code
+                    GitHub
+                  </a>
+                  <a
+                    href="https://linkedin.com/in/nikitapoojaryy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-[var(--muted)] hover:text-[var(--primary)] transition-colors"
+                  >
+                    <Mail size={20} />
+                    LinkedIn
                   </a>
                 </div>
               </div>

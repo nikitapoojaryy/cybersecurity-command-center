@@ -2,32 +2,34 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Nikita Poojary | Ethical Hacker & Penetration Tester',
+  title: 'Nikita Poojary | GRC Analyst & Cybersecurity Professional',
   description:
-    'Ethical hacking portfolio showcasing penetration testing, red team exercises, security research, and enterprise security expertise.',
+    'Cybersecurity professional specializing in Governance, Risk, and Compliance (GRC). Portfolio showcasing risk assessment, ISO 27001 controls, NIST framework implementation, and compliance expertise.',
   keywords: [
-    'ethical hacker',
-    'penetration tester',
-    'red team',
+    'GRC analyst',
     'cybersecurity',
-    'security research',
-    'enterprise security',
+    'risk assessment',
+    'ISO 27001',
+    'NIST framework',
+    'compliance',
+    'governance',
+    'security controls',
   ],
   authors: [{ name: 'Nikita Poojary' }],
   creator: 'Nikita Poojary',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://yourportfolio.com',
-    title: 'Nikita Poojary | Ethical Hacker & Penetration Tester',
+    url: 'https://nikitapoojary.com',
+    title: 'Nikita Poojary | GRC Analyst & Cybersecurity Professional',
     description:
-      'Ethical hacking portfolio showcasing penetration testing, red team exercises, and security expertise.',
+      'GRC and cybersecurity portfolio showcasing risk assessment, compliance frameworks, and security governance expertise.',
     images: [
       {
-        url: 'https://yourportfolio.com/og-image.png',
+        url: 'https://nikitapoojary.com/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Nikita Poojary - Ethical Hacker',
+        alt: 'Nikita Poojary - GRC Analyst',
       },
     ],
   },

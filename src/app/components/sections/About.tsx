@@ -11,18 +11,18 @@ export function About() {
   const highlights = [
     {
       icon: Shield,
-      title: 'Offensive Security Certified',
-      description: 'OSCP, CEH, and other industry-leading ethical hacking certifications.',
+      title: 'GRC Certified Professional',
+      description: 'Google Cybersecurity, Cisco, IBM, Fortinet, DPDPA, and ISO 27001 certified.',
     },
     {
       icon: Zap,
-      title: 'High-Impact Assessments',
-      description: 'Discovered critical vulnerabilities protecting Fortune 500 enterprises.',
+      title: 'Risk & Compliance Expertise',
+      description: 'Skilled in risk assessment, NIST frameworks, ISO 27001 controls mapping, and compliance reporting.',
     },
     {
       icon: Target,
-      title: 'Red Team Operations',
-      description: 'Simulated advanced attack scenarios to improve security posture.',
+      title: 'Security Governance',
+      description: 'Experience in developing security policies, access controls, and incident response strategies.',
     },
   ];
 
@@ -33,7 +33,7 @@ export function About() {
           <SectionTitle
             subtitle="About"
             title="Who I Am"
-            description="Dedicated ethical hacker with a passion for finding and fixing security vulnerabilities before adversaries do."
+            description="Entry-level GRC professional with strong foundation in cybersecurity, risk management, and compliance frameworks."
           />
         </div>
 
@@ -46,13 +46,13 @@ export function About() {
             viewport={{ once: true }}
           >
             <p className="text-lg text-[var(--muted)] mb-6 leading-relaxed">
-              I'm a penetration tester and ethical hacker with 5+ years of experience securing enterprise infrastructure. My work focuses on identifying vulnerabilities through realistic attack scenarios and providing actionable remediation strategies.
+              I'm a cybersecurity professional pursuing my MSc in Information Technology with a strong focus on Governance, Risk, and Compliance. My academic foundation and practical certifications equip me with expertise in security frameworks, risk assessment, and compliance management.
             </p>
             <p className="text-lg text-[var(--muted)] mb-6 leading-relaxed">
-              I specialize in network penetration testing, application security assessment, and red team operations. I've worked with organizations across finance, healthcare, technology, and government sectors to strengthen their security defenses.
+              I specialize in implementing NIST Cybersecurity Framework, ISO 27001 controls, and developing comprehensive risk assessments. My work focuses on building secure, compliant infrastructure and helping organizations establish robust governance practices.
             </p>
             <p className="text-lg text-[var(--muted)] leading-relaxed">
-              Beyond assessments, I'm passionate about security research and knowledge sharing. I regularly contribute to the cybersecurity community through published research, speaking engagements, and mentoring the next generation of ethical hackers.
+              Beyond academics, I'm committed to continuous learning and industry excellence. I'm actively pursuing advanced certifications and staying updated with emerging security threats and compliance requirements across different sectors.
             </p>
           </motion.div>
 

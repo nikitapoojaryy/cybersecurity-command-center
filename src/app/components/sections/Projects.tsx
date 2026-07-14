@@ -22,64 +22,46 @@ interface ProjectItem {
 
 const projects: ProjectItem[] = [
   {
-    id: 'internal-pentest',
-    title: 'Internal Network Penetration Test',
+    id: 'risk-assessment',
+    title: 'Information Security Risk Assessment Project',
     description:
-      'Comprehensive assessment of enterprise internal network discovering critical AD misconfigurations.',
+      'Comprehensive risk assessment framework for enterprise environment, identifying and prioritizing security risks.',
     image: '/images/project-1.jpg',
-    technologies: ['Metasploit', 'Impacket', 'Powershell'],
-    securityConcepts: ['Lateral Movement', 'Privilege Escalation', 'AD Exploitation'],
+    technologies: ['Risk Assessment', 'NIST Framework', 'Excel', 'Documentation'],
+    securityConcepts: ['Risk Management', 'Vulnerability Assessment', 'Threat Analysis'],
     achievements: [
-      'Identified 12 critical vulnerabilities',
-      'Achieved domain admin access',
-      'Provided remediation roadmap',
+      'Developed complete risk register',
+      'Identified critical security gaps',
+      'Provided remediation prioritization',
     ],
-    github: 'https://github.com',
-    demo: 'https://example.com',
   },
   {
-    id: 'web-app-pentest',
-    title: 'Web Application Security Assessment',
+    id: 'iso-27001',
+    title: 'ISO/IEC 27001 Security Controls Mapping',
     description:
-      'In-depth testing of custom web application uncovering authentication and injection flaws.',
+      'Mapped existing security controls to ISO 27001 standards, ensuring compliance and identifying control gaps.',
     image: '/images/project-2.jpg',
-    technologies: ['Burp Suite', 'OWASP ZAP', 'Python'],
-    securityConcepts: ['OWASP Top 10', 'API Security', 'Authentication Bypass'],
+    technologies: ['ISO 27001', 'Compliance Mapping', 'Excel', 'Documentation'],
+    securityConcepts: ['Compliance', 'Control Framework', 'Security Governance'],
     achievements: [
-      'Found SQL injection in payment module',
-      'Identified privilege escalation path',
-      'Zero-day-like XSS discovery',
+      'Completed controls mapping to ISO 27001',
+      'Identified compliance gaps',
+      'Developed implementation roadmap',
     ],
-    github: 'https://github.com',
   },
   {
-    id: 'cloud-infrastructure',
-    title: 'Cloud Infrastructure Security Audit',
+    id: 'hands-on-labs',
+    title: 'Cybersecurity Hands-on Lab Practice',
     description:
-      'Assessed AWS environment configuration discovering S3 misconfigurations and IAM issues.',
+      'Practical hands-on exercises in network security, vulnerability assessment, and security tools implementation.',
     image: '/images/project-3.jpg',
-    technologies: ['AWS', 'Terraform', 'ScoutSuite'],
-    securityConcepts: ['Cloud Security', 'IaC Security', 'Identity Management'],
+    technologies: ['Wireshark', 'Nmap', 'Virtual Machines', 'Linux', 'Windows'],
+    securityConcepts: ['Network Security', 'Packet Analysis', 'Vulnerability Scanning'],
     achievements: [
-      'Secured exposed data buckets',
-      'Fixed overpermissioned IAM roles',
-      'Implemented security baselines',
+      'Completed advanced security labs',
+      'Mastered network analysis tools',
+      'Practiced incident response scenarios',
     ],
-  },
-  {
-    id: 'red-team-exercise',
-    title: 'Red Team Simulation',
-    description:
-      'Multi-phase red team exercise simulating sophisticated attack against corporate environment.',
-    image: '/images/project-4.jpg',
-    technologies: ['Empire', 'Cobalt Strike', 'Custom C2'],
-    securityConcepts: ['Evasion', 'Command & Control', 'Persistence'],
-    achievements: [
-      'Bypassed EDR detection',
-      'Established persistence',
-      'Exfiltrated sensitive data',
-    ],
-    github: 'https://github.com',
   },
 ];
 
@@ -90,8 +72,8 @@ export function Projects() {
         <div className="mb-16">
           <SectionTitle
             subtitle="Portfolio"
-            title="Security Projects"
-            description="Real-world penetration tests, security assessments, and red team operations."
+            title="GRC & Security Projects"
+            description="Risk assessment, compliance mapping, and hands-on security implementations."
           />
         </div>
 

@@ -15,44 +15,34 @@ interface SkillCategory {
 
 const skillCategories: SkillCategory[] = [
   {
-    name: 'Penetration Testing',
-    icon: '🔓',
-    skills: ['Network PT', 'Web App PT', 'Infrastructure PT', 'Exploitation', 'Privilege Escalation'],
+    name: 'Security Frameworks',
+    icon: '🔒',
+    skills: ['NIST Framework', 'ISO 27001', 'CIS Controls', 'Risk Assessment', 'Threat Modeling'],
   },
   {
     name: 'Operating Systems',
     icon: '🖥️',
-    skills: ['Linux', 'Windows', 'macOS', 'Active Directory', 'BSD'],
+    skills: ['Windows', 'Linux Fundamentals', 'Virtual Machines', 'System Hardening'],
   },
   {
     name: 'Networking',
     icon: '🌐',
-    skills: ['TCP/IP', 'DNS', 'DHCP', 'VPN', 'Firewalls', 'IDS/IPS'],
+    skills: ['TCP/IP', 'DNS', 'Network Security', 'Packet Analysis', 'VPNs'],
   },
   {
-    name: 'Tools & Frameworks',
+    name: 'Tools & Tech',
     icon: '⚙️',
-    skills: ['Metasploit', 'Burp Suite', 'Nmap', 'Wireshark', 'Kali Linux', 'Empire'],
+    skills: ['Wireshark', 'Nmap', 'Excel', 'Git', 'Virtual Machines', 'Documentation'],
   },
   {
-    name: 'Programming',
-    icon: '💻',
-    skills: ['Python', 'Bash', 'PowerShell', 'Ruby', 'JavaScript'],
-  },
-  {
-    name: 'Cloud Security',
-    icon: '☁️',
-    skills: ['AWS', 'Azure', 'GCP', 'Container Security', 'Kubernetes'],
-  },
-  {
-    name: 'Web Security',
-    icon: '🔐',
-    skills: ['OWASP Top 10', 'SQL Injection', 'XSS', 'CSRF', 'Authentication', 'API Security'],
+    name: 'Risk Management',
+    icon: '📊',
+    skills: ['Risk Register', 'Compliance Reports', 'Vulnerability Mgmt', 'Access Control', 'Incident Response'],
   },
   {
     name: 'Certifications',
     icon: '🎓',
-    skills: ['OSCP', 'CEH', 'Security+', 'GPEN', 'GWAPT', 'OSINT'],
+    skills: ['Google Cybersecurity', 'Cisco CCNA', 'IBM Security', 'Fortinet FCA', 'DPDPA', 'ISO 27001'],
   },
 ];
 

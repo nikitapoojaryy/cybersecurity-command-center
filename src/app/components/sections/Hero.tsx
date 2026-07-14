@@ -21,30 +21,47 @@ export function Hero() {
             {/* Tag */}
             <div className="mb-6">
               <Badge variant="primary">
-                Ethical Hacker & Penetration Tester
+                GRC Analyst & Cybersecurity Professional
               </Badge>
             </div>
 
             {/* Main Headline */}
             <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
-              Securing Enterprise
+              Governance, Risk &
               <span className="block mt-2 bg-gradient-to-r from-[var(--primary)] to-[var(--hover)] bg-clip-text text-transparent">
-                Infrastructure at Scale
+                Compliance Excellence
               </span>
             </h1>
 
             {/* Subtitle */}
             <p className="text-lg text-[var(--muted)] mb-8 leading-relaxed max-w-xl">
-              Specializing in penetration testing, red team exercises, vulnerability assessment, and strategic security research for enterprise environments.
+              Dedicated cybersecurity professional specializing in risk assessment, compliance frameworks, security controls, and enterprise governance.
             </p>
 
             {/* CTA Buttons */}
             <div className="flex flex-wrap gap-4 mb-12">
-              <Button variant="primary" size="lg" className="flex items-center gap-2">
-                View Security Portfolio
+              <Button 
+                variant="primary" 
+                size="lg" 
+                className="flex items-center gap-2"
+                onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+              >
+                View Projects
                 <ArrowRight size={18} />
               </Button>
-              <Button variant="outline" size="lg" className="flex items-center gap-2">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="flex items-center gap-2"
+                onClick={() => {
+                  const link = document.createElement('a');
+                  link.href = '/resume.pdf';
+                  link.download = 'Nikita_Poojary_Resume.pdf';
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                }}
+              >
                 <Download size={18} />
                 Download Resume
               </Button>
@@ -53,16 +70,16 @@ export function Hero() {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 pt-8 border-t border-[var(--border)]">
               <div>
-                <div className="text-2xl font-bold text-[var(--primary)]">50+</div>
-                <p className="text-sm text-[var(--muted)]">Assessments</p>
-              </div>
-              <div>
-                <div className="text-2xl font-bold text-[var(--primary)]">8+</div>
+                <div className="text-2xl font-bold text-[var(--primary)]">6</div>
                 <p className="text-sm text-[var(--muted)]">Certifications</p>
               </div>
               <div>
-                <div className="text-2xl font-bold text-[var(--primary)]">100%</div>
-                <p className="text-sm text-[var(--muted)]">Professional</p>
+                <div className="text-2xl font-bold text-[var(--primary)]">3</div>
+                <p className="text-sm text-[var(--muted)]">Projects</p>
+              </div>
+              <div>
+                <div className="text-2xl font-bold text-[var(--primary)]">2/6</div>
+                <p className="text-sm text-[var(--muted)]">Courses</p>
               </div>
             </div>
           </motion.div>
@@ -102,7 +119,7 @@ export function Hero() {
                       $ <span className="text-[var(--text)]">whoami</span>
                     </div>
                     <div className="text-[var(--primary)] mt-2">
-                      nikita_poojary | ethical_hacker | red_team
+                     nikita_poojary | grc_analyst | cybersecurity
                     </div>
                   </motion.div>
 
@@ -112,14 +129,14 @@ export function Hero() {
                     transition={{ delay: 0.6, duration: 0.5 }}
                   >
                     <div className="text-[var(--muted)] mt-4">
-                      $ <span className="text-[var(--text)]">skills --display</span>
+                     $ <span className="text-[var(--text)]">expertise --display</span>
                     </div>
                     <div className="text-[var(--text)] mt-2 space-y-1 text-xs">
-                      <div>→ Penetration Testing (OSCP, CEH)</div>
-                      <div>→ Red Team Operations</div>
-                      <div>→ Vulnerability Assessment</div>
-                      <div>→ Security Research</div>
-                      <div>→ Network Exploitation</div>
+                     <div>→ Risk Assessment & Compliance</div>
+                     <div>→ NIST Framework Implementation</div>
+                     <div>→ ISO 27001 Controls Mapping</div>
+                     <div>→ Security Governance</div>
+                     <div>→ Vulnerability Management</div>
                     </div>
                   </motion.div>
 
@@ -129,10 +146,10 @@ export function Hero() {
                     transition={{ delay: 0.8, duration: 0.5 }}
                   >
                     <div className="text-[var(--muted)] mt-4">
-                      $ <span className="text-[var(--text)]">projects --count</span>
+                     $ <span className="text-[var(--text)]">certifications --list</span>
                     </div>
-                    <div className="text-green-400 mt-2">
-                      [✓] 15+ Production Security Projects
+                   <div className="text-[var(--primary)] mt-2">
+                     [✓] 6 Industry Certifications
                     </div>
                   </motion.div>
 

@@ -19,46 +19,32 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
   {
-    id: 'current',
-    role: 'Senior Penetration Tester',
-    company: 'Security Firm Inc.',
-    period: '2023 - Present',
+    id: 'msc',
+    role: 'Master of Science in Information Technology',
+    company: 'Thakur College of Science & Commerce',
+    period: '2024 - 2026',
     description:
-      'Leading penetration testing engagements for Fortune 500 companies and critical infrastructure.',
+      'Pursuing advanced degree with focus on cybersecurity, risk management, and enterprise security governance.',
     achievements: [
-      'Conducted 30+ security assessments',
-      'Trained team of 5 junior pentesters',
-      'Developed custom exploitation frameworks',
+      'CGPA: 8.25/10',
+      'Specialized in cybersecurity and compliance',
+      'Completed industry-relevant certifications',
     ],
-    technologies: ['Metasploit', 'Burp Suite', 'Python', 'Cobalt Strike'],
+    technologies: ['NIST Framework', 'ISO 27001', 'Risk Assessment', 'Security Governance'],
   },
   {
-    id: 'prev-1',
-    role: 'Security Researcher',
-    company: 'Enterprise Security Co.',
-    period: '2021 - 2023',
+    id: 'bsc',
+    role: 'Bachelor of Science in Information Technology',
+    company: 'Nirmala Memorial Foundation College',
+    period: '2021 - 2024',
     description:
-      'Researched vulnerabilities and developed security solutions for enterprise environments.',
+      'Built strong foundation in IT fundamentals, networking, database management, and cybersecurity basics.',
     achievements: [
-      'Published 3 security research papers',
-      'Discovered 5 CVEs',
-      'Built automated vulnerability scanning tools',
+      'CGPA: 7.83/10',
+      'Developed interest in GRC and security',
+      'Participated in security workshops',
     ],
-    technologies: ['Python', 'JavaScript', 'Kubernetes', 'AWS'],
-  },
-  {
-    id: 'prev-2',
-    role: 'Junior Penetration Tester',
-    company: 'Cybersecurity Startup',
-    period: '2020 - 2021',
-    description:
-      'Performed security assessments and vulnerability testing for SMB and enterprise clients.',
-    achievements: [
-      'Completed 15+ assessments',
-      'Earned OSCP certification',
-      'Mentored by industry experts',
-    ],
-    technologies: ['Nmap', 'Burp Suite', 'Metasploit', 'Linux'],
+    technologies: ['Networking', 'Database Management', 'Web Development', 'System Administration'],
   },
 ];
 
@@ -68,9 +54,9 @@ export function Experience() {
       <Container>
         <div className="mb-16">
           <SectionTitle
-            subtitle="Career"
-            title="Professional Experience"
-            description="Journey in ethical hacking and cybersecurity research."
+            subtitle="Background"
+            title="Education"
+            description="Academic foundation in information technology with cybersecurity specialization."
           />
         </div>
 
