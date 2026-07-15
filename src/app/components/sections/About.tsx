@@ -46,7 +46,7 @@ export function About() {
             viewport={{ once: true }}
           >
             <p className="text-lg text-[var(--muted)] mb-6 leading-relaxed">
-              I'm a cybersecurity professional pursuing my MSc in Information Technology with a strong focus on Governance, Risk, and Compliance. My academic foundation and practical certifications equip me with expertise in security frameworks, risk assessment, and compliance management.
+              I have pursued a Master of Science in Information Technology with a strong focus on Governance, Risk, and Compliance. My academic foundation and practical certifications equip me with expertise in security frameworks, risk assessment, and compliance management.
             </p>
             <p className="text-lg text-[var(--muted)] mb-6 leading-relaxed">
               I specialize in implementing NIST Cybersecurity Framework, ISO 27001 controls, and developing comprehensive risk assessments. My work focuses on building secure, compliant infrastructure and helping organizations establish robust governance practices.

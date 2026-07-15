@@ -1,5 +1,6 @@
 'use client';
 
+import { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Container } from '@/app/components/ui/Container';
 import { SectionTitle } from '@/app/components/ui/SectionTitle';
@@ -66,6 +67,20 @@ const projects: ProjectItem[] = [
 ];
 
 export function Projects() {
+  const [previews, setPreviews] = useState<Record<string, string>>({});
+  const inputRefs = useRef<Record<string, HTMLInputElement | null>>({});
+
+  const handleImageSelect = (projectId: string, file?: File | null) => {
+    if (!file) return;
+    const url = URL.createObjectURL(file);
+    setPreviews((p) => ({ ...p, [projectId]: url }));
+  };
+
+  const openImagePicker = (projectId: string) => {
+    const ref = inputRefs.current[projectId];
+    ref?.click();
+  };
+
   return (
     <section id="projects" className="py-20 relative">
       <Container>
@@ -88,16 +103,37 @@ export function Projects() {
           {projects.map((project) => (
             <motion.div key={project.id} variants={animations.itemVariants}>
               <Card className="group h-full flex flex-col overflow-hidden">
-                {/* Image */}
-                {project.image && (
-                  <div className="h-48 bg-[var(--surface)] overflow-hidden relative mb-6">
+                {/* Image / Upload */}
+                <div className="h-48 bg-[var(--surface)] overflow-hidden relative mb-6">
+                  {previews[project.id] ? (
+                    <img src={previews[project.id]} alt={project.title} className="w-full h-full object-cover" />
+                  ) : project.image ? (
+                    <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
+                  ) : (
                     <div className="w-full h-full bg-gradient-to-br from-[var(--primary)]/10 to-[var(--hover)]/10 flex items-center justify-center">
-                      <span className="text-sm text-[var(--muted)]">
-                        {project.title.slice(0, 1)}
-                      </span>
+                      <span className="text-sm text-[var(--muted)]">{project.title.slice(0, 1)}</span>
                     </div>
+                  )}
+
+                  {/* Hidden file input for local preview */}
+                  <input
+                    ref={(el) => { inputRefs.current[project.id] = el; }}
+                    type="file"
+                    accept="image/*"
+                    className="hidden"
+                    onChange={(e) => handleImageSelect(project.id, e.target.files?.[0] || null)}
+                  />
+
+                  <div className="absolute right-3 top-3">
+                    <button
+                      type="button"
+                      className="px-3 py-1 text-xs rounded bg-[var(--cards)] border border-[var(--border)] text-[var(--muted)] hover:text-[var(--primary)]"
+                      onClick={() => openImagePicker(project.id)}
+                    >
+                      Upload Photo
+                    </button>
                   </div>
-                )}
+                </div>
 
                 {/* Content */}
                 <div className="flex flex-col flex-grow">

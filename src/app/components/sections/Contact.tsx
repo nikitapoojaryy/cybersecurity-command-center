@@ -68,10 +68,10 @@ export function Contact() {
                 <div>
                   <h4 className="text-white font-semibold mb-1">Email</h4>
                   <a
-                    href="mailto:nikitapoojary@gmail.com"
+                    href="mailto:nikitapoojarey@gmail.com"
                     className="text-[var(--muted)] hover:text-[var(--primary)] transition-colors"
                   >
-                    nikitapoojary@gmail.com
+                    nikitapoojarey@gmail.com
                   </a>
                 </div>
               </div>
