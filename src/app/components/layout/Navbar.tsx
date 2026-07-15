@@ -24,7 +24,7 @@ export function Navbar() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="font-bold text-xl text-white">
-            <span className="text-[var(--primary)]">●</span> NK
+            <span className="text-[var(--primary)]">●</span> NP
           </Link>
 
           {/* Desktop Menu */}
