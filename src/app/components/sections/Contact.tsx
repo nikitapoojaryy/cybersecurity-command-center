@@ -5,7 +5,7 @@ import { Container } from '@/app/components/ui/Container';
 import { SectionTitle } from '@/app/components/ui/SectionTitle';
 import { Button } from '@/app/components/ui/Button';
 import { animations } from '@/app/config/animations';
-import { Code, Mail, Phone, MapPin } from 'lucide-react';
+import { Code, Mail, MapPin } from 'lucide-react';
 import { useState } from 'react';
 
 export function Contact() {
@@ -46,7 +46,7 @@ export function Contact() {
           />
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-2 gap-12">
           {/* Contact Info */}
           <motion.div
             initial={animations.fadeInUp.initial}
@@ -65,6 +65,7 @@ export function Contact() {
                     <Mail className="h-6 w-6 text-[var(--primary)]" />
                   </div>
                 </div>
+
                 <div>
                   <h4 className="text-white font-semibold mb-1">Email</h4>
                   <a
@@ -79,26 +80,10 @@ export function Contact() {
               <div className="flex gap-4">
                 <div className="flex-shrink-0">
                   <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-[var(--primary)]/10">
-                    <Phone className="h-6 w-6 text-[var(--primary)]" />
-                  </div>
-                </div>
-                <div>
-                  <h4 className="text-white font-semibold mb-1">Phone</h4>
-                  <a
-                    href="tel:+918591065572"
-                    className="text-[var(--muted)] hover:text-[var(--primary)] transition-colors"
-                  >
-                    +91 8591065572
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex gap-4">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-[var(--primary)]/10">
                     <MapPin className="h-6 w-6 text-[var(--primary)]" />
                   </div>
                 </div>
+
                 <div>
                   <h4 className="text-white font-semibold mb-1">Location</h4>
                   <p className="text-[var(--muted)]">India</p>
@@ -107,6 +92,7 @@ export function Contact() {
 
               <div>
                 <h4 className="text-white font-semibold mb-4">Follow me</h4>
+
                 <div className="flex flex-wrap gap-4">
                   <a
                     href="https://github.com/nikitapoojaryy"
@@ -117,6 +103,7 @@ export function Contact() {
                     <Code size={20} />
                     GitHub
                   </a>
+
                   <a
                     href="https://linkedin.com/in/nikitapoojaryy"
                     target="_blank"
@@ -146,6 +133,7 @@ export function Contact() {
                 <div className="text-2xl font-semibold text-green-400 mb-2">
                   Success! Message Sent
                 </div>
+
                 <p className="text-[var(--muted)]">
                   Thank you for reaching out. I will get back to you soon!
                 </p>
@@ -159,6 +147,7 @@ export function Contact() {
                   >
                     Full Name
                   </label>
+
                   <input
                     type="text"
                     id="name"
@@ -174,10 +163,11 @@ export function Contact() {
                 <div>
                   <label
                     htmlFor="email"
-                    className="block text-sm font-medium text-white mb-2"
+                    className="block text-sm medium text-white mb-2"
                   >
                     Email Address
                   </label>
+
                   <input
                     type="email"
                     id="email"
@@ -197,6 +187,7 @@ export function Contact() {
                   >
                     Subject
                   </label>
+
                   <input
                     type="text"
                     id="subject"
@@ -216,6 +207,7 @@ export function Contact() {
                   >
                     Message
                   </label>
+
                   <textarea
                     id="message"
                     name="message"
@@ -228,7 +220,12 @@ export function Contact() {
                   />
                 </div>
 
-                <Button variant="primary" size="lg" type="submit" className="w-full">
+                <Button
+                  variant="primary"
+                  size="lg"
+                  type="submit"
+                  className="w-full"
+                >
                   Send Message
                 </Button>
               </form>
