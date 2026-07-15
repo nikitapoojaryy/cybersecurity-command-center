@@ -34,10 +34,9 @@ export function Footer() {
           {/* Brand */}
           <div>
             <h3 className="font-bold text-xl mb-2">
-              <span className="text-[var(--primary)]">●</span> NK
+              <span className="text-[var(--primary)]">●</span> NP
             </h3>
             <p className="text-[var(--muted)] text-sm">
-              Ethical hacker & penetration tester
             </p>
           </div>
 
